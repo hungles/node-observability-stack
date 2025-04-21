@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'node_app_1'
+    static_configs:
+      - targets: ['nodeapp1:3000']
+  
+  - job_name: 'node_app_2'
+    static_configs:
+      - targets: ['nodeapp2:3000']
